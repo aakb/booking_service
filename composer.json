@@ -1,4 +1,6 @@
 {
+    "name": "aakb/booking_service",
+    "description": "Booking service.",
     "type": "project",
     "license": "proprietary",
     "require": {
