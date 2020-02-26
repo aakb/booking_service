@@ -101,7 +101,7 @@
             "php-cs-fixer --config=.php_cs.dist fix --dry-run --diff --diff-format=udiff"
         ],
         "actions/twigcs": [
-            "twigcs lint Resources/views"
+            "@check-coding-standards/twigcs"
         ],
         "actions/phan": [
             "./vendor/bin/phan --no-progress-bar --allow-polyfill-parser"
