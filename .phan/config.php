@@ -310,7 +310,12 @@ return [
     // Documentation about available bundled plugins can be found [here](https://github.com/phan/phan/tree/master/.phan/plugins).
     //
     // Alternately, you can pass in the full path to a PHP file with the plugin's implementation (e.g. `'vendor/phan/phan/.phan/plugins/AlwaysReturnPlugin.php'`)
-    'plugins' => [],
+    'plugins' => [
+        'AlwaysReturnPlugin',
+        'PregRegexCheckerPlugin',
+        'UnreachableCodePlugin',
+        'vendor/drenso/phan-extensions/Plugin/Annotation/SymfonyAnnotationPlugin.php',
+    ],
 
     // A list of directories that should be parsed for class and
     // method information. After excluding the directories
